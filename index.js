@@ -17,20 +17,20 @@ bot.on('message', message=>{
             message.channel.send("pong")
             break;
         case 'info':
-            if(args[1] === 'Shahmeer'){
+            if(!args[1] === 'Shahmeer'){
                 message.channel.send('```He is currently playing anime waifu game.```');
         
             }
-            if(args[1] === 'Gorodo'){
+            if(!args[1] === 'Gorodo'){
                 message.channel.send('```Horny.```');
             }
-            if(args[1] === 'Kart'){
+            if(!args[1] === 'Kart'){
                 message.channel.send('```He is playing Roblox.```');
             }
-            if(args[1] === 'Starry'){
+            if(!args[1] === 'Starry'){
                 message.channel.send('```He is currently very tired.```');
             }
-            if(args[1] === 'Yeetus'){
+            if(!args[1] === 'Yeetus'){
                 message.channel.send('```He is eating cheetos.```')
             }else{
                 message.channel.send('Please specify a user.');
