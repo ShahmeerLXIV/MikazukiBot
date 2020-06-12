@@ -18,10 +18,22 @@ bot.on('message', message=>{
             break;
         case 'info':
             if(args[1] === 'Shahmeer'){
-                message.channel.send('He is currently hibernating.');
+                message.channel.send('```He is currently playing anime waifu game.```');
         
+            }
+            if(args[1] === 'Gorodo'){
+                message.channel.send('```Horny.```');
+            }
+            if(args[1] === 'Kart'){
+                message.channel.send('```He is playing Roblox.```');
+            }
+            if(args[1] === 'Starry'){
+                message.channel.send('```He is currently very tired.```');
+            }
+            if(args[1] === 'Yeetus'){
+                message.channel.send('```He is eating cheetos.```')
             }else{
-                message.channel.send('Please state a user')
+                message.channel.send('Please specify a user.');
             }
             break;
         case 'zahando':
