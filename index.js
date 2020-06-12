@@ -29,7 +29,7 @@ bot.on('message', message=>{
             message.delete();
             if(!args[1]) return message.channel.send('```Please specify a value.```')
             message.channel.bulkDelete(args[1]); 
-            message.send('https://tenor.com/view/scrape-okuyasu-nijimura-za-hando-the-hand-jojo-gif-14165071').then(msg => msg.delete(3000));
+            message.send('https://tenor.com/view/scrape-okuyasu-nijimura-za-hando-the-hand-jojo-gif-14165071').then(msg => msg.delete(3000))
             break;
         case 'heavensdoor':
             const embed = new Discord.MessageEmbed()
