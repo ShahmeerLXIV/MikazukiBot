@@ -34,11 +34,6 @@ bot.on('message', message=>{
             message.channel.bulkDelete(args[1]);   
             break;
         case 'heavensdoor':
-            message.channel.send('https://tenor.com/view/heavens-door-jojo-anime-jjba-stand-gif-16320510')
-            .then(
-                (message => message.delete({timeout: 2000}))
-            );
-
             const embed = new Discord.MessageEmbed()
             .setTitle('User Information')
             .addField('User\'s Name', message.author.username)
