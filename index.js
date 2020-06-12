@@ -34,6 +34,9 @@ bot.on('message', message=>{
             message.channel.bulkDelete(args[1]);   
             break;
         case 'heavensdoor':
+            if(user){
+                if(member){
+
             const embed = new Discord.MessageEmbed()
             .setTitle('User Information')
             .addField('User\'s Name', message.author.username)
@@ -44,6 +47,8 @@ bot.on('message', message=>{
             .setColor(0x00cae7) 
             .setThumbnail(message.author.displayAvatarURL())
             message.channel.send(embed);
+                }
+            }    
             break;
         case 'kick':
             if(!message.member.hasPermission("ADMINISTRATOR")) return message.channel.send('```You do not have permission to use this command.```')
