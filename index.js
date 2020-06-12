@@ -25,11 +25,10 @@ bot.on('message', message=>{
             }
             break;
         case 'zahando':
-            if(!message.member.hasPermission("ADMINISTRATOR")) {
-                return message.channel.send('```You do not have permission to use this command.```')}
+            if(!message.member.hasPermission("ADMINISTRATOR")) return message.channel.send('```You do not have permission to use this command.```')
+            message.channel.send('https://tenor.com/view/scrape-okuyasu-nijimura-za-hando-the-hand-jojo-gif-14165071')
             message.delete();
-            if(!args[1]) {
-                return message.channel.send('```Please specify a value.```')}
+            if(!args[1]) return message.channel.send('```Please specify a value.```')
             message.channel.bulkDelete(args[1]);   
             break;
         case 'heavensdoor':
@@ -73,7 +72,7 @@ bot.on('message', message=>{
                     member.ban('```You have been banner.```').then(()=>{
                         message.channel.send(```Successfully banned ${user.tag}```)
                     })
-                    .catch(_err =>{
+                    .catch(err =>{
                         message.channel.send('```I was unable to ban that user.```')
                     });
 
