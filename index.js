@@ -34,17 +34,15 @@ bot.on('message', message=>{
             const embed = new Discord.MessageEmbed()
             .setTitle('User Information')
             .addField('User\'s Name', message.author.username)
-            
+
             .setColor(0x00cae7)
             .setThumbnail(message.author.displayAvatarURL())
             message.channel.send(embed);
             break;
         case 'kick':
             if(!message.member.hasPermission("ADMINISTRATOR")) return message.channel.send('```You do not have permission to use this command.```')
-             const user = message.mentions.users.first();
 
-            if(user){
-                const member = message.guild.member(user);
+            if(user){                
             
                 if(member){
                     member.kick('```You have been kicked.```').then(()=>{
