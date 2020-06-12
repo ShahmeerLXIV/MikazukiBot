@@ -13,26 +13,6 @@ bot.on('message', message=>{
     let args = message.content.substring(Prefix.length).split(" ");
     
     switch(args[0]){
-        case 'ping':
-            message.channel.send("pong")
-            break;
-        case 'info':
-            if(args[1] === 'Shahmeer'){
-                message.channel.send('```He is currently hibernating.```');
-            }else{
-                message.channel.send('```Please state a user.```')
-            }
-            if(args[1] === 'Gorodo'){
-                message.channel.send('```Horny.```');
-            }else{
-                message.channel.send('```Please state a user.```')
-            }
-            if(args[1] === 'Kart'){
-                message.channel.send('He is currently playing Roblox.');
-            }else{
-                message.channel.send('Please state a user.')
-            }
-            break;
         case 'zahando':
             if(!message.member.hasPermission("ADMINISTRATOR")) return message.channel.send('```You do not have permission to use this command.```')
             message.channel.send('https://tenor.com/view/scrape-okuyasu-nijimura-za-hando-the-hand-jojo-gif-14165071').then(
@@ -50,7 +30,7 @@ bot.on('message', message=>{
             .addField('Join Date', message.member.joinedAt)
             .addField('Account Creation Date', message.author.createdAt)
             .setFooter(message.author.id)
-            .setColor(0x00cae7) 
+            .setColor(0x00cae7)
             .setThumbnail(message.author.displayAvatarURL())
             message.channel.send(embed);
             break;
