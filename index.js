@@ -18,10 +18,19 @@ bot.on('message', message=>{
             break;
         case 'info':
             if(args[1] === 'Shahmeer'){
-                message.channel.send('He is currently hibernating.');
-        
+                message.channel.send('```He is currently hibernating.```');
             }else{
-                message.channel.send('Please state a user')
+                message.channel.send('```Please state a user.```')
+            }
+            if(args[1] === 'Gorodo'){
+                message.channel.send('```Horny.```');
+            }else{
+                message.channel.send('```Please state a user.```')
+            }
+            if(args[1] === 'Kart'){
+                message.channel.send('He is currently playing Roblox.');
+            }else{
+                message.channel.send('Please state a user.')
             }
             break;
         case 'zahando':
@@ -34,9 +43,6 @@ bot.on('message', message=>{
             message.channel.bulkDelete(args[1]);   
             break;
         case 'heavensdoor':
-            if(user){
-                if(member){
-
             const embed = new Discord.MessageEmbed()
             .setTitle('User Information')
             .addField('User\'s Name', message.author.username)
@@ -47,8 +53,6 @@ bot.on('message', message=>{
             .setColor(0x00cae7) 
             .setThumbnail(message.author.displayAvatarURL())
             message.channel.send(embed);
-                }
-            };    
             break;
         case 'kick':
             if(!message.member.hasPermission("ADMINISTRATOR")) return message.channel.send('```You do not have permission to use this command.```')
