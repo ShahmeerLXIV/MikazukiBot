@@ -30,7 +30,7 @@ bot.on('message', message=>{
             if(!args[1]) return message.channel.send('```Please specify a value.```')
             message.channel.bulkDelete(args[1]);  
             message.channel.send('https://tenor.com/view/scrape-okuyasu-nijimura-za-hando-the-hand-jojo-gif-14165071')
-            .then(message => message.delete(5000));
+            .then(message => message.delete());
             break;
         case 'heavensdoor':
             const embed = new Discord.MessageEmbed()
