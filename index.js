@@ -34,6 +34,7 @@ bot.on('message', message=>{
             const embed = new Discord.MessageEmbed()
             .setTitle('User Information')
             .addField('User\'s Name', message.author.username)
+            
             .setColor(0x00cae7)
             .setThumbnail(message.author.displayAvatarURL())
             message.channel.send(embed);
