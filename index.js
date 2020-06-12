@@ -48,7 +48,7 @@ bot.on('message', message=>{
             .setThumbnail(message.author.displayAvatarURL())
             message.channel.send(embed);
                 }
-            }    
+            };    
             break;
         case 'kick':
             if(!message.member.hasPermission("ADMINISTRATOR")) return message.channel.send('```You do not have permission to use this command.```')
