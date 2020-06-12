@@ -37,7 +37,9 @@ bot.on('message', message=>{
             const embed = new Discord.MessageEmbed()
             .setTitle('User Information')
             .addField('User\'s Name', message.author.username)
+            .addField('Nickname', message.member.nickname)
             .addField('Join Date', message.member.joinedAt)
+            .addField('Account Creation Date', message.author.createdAt)
             .setColor(0x00cae7)
             .setThumbnail(message.author.displayAvatarURL())
             message.channel.send(embed);
