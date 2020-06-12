@@ -13,6 +13,17 @@ bot.on('message', message=>{
     let args = message.content.substring(Prefix.length).split(" ");
     
     switch(args[0]){
+        case 'ping':
+            message.channel.send("pong")
+            break;
+        case 'info':
+            if(args[1] === 'Shahmeer'){
+                message.channel.send('He is currently hibernating.');
+        
+            }else{
+                message.channel.send('Please state a user')
+            }
+            break;
         case 'zahando':
             if(!message.member.hasPermission("ADMINISTRATOR")) return message.channel.send('```You do not have permission to use this command.```')
             message.channel.send('https://tenor.com/view/scrape-okuyasu-nijimura-za-hando-the-hand-jojo-gif-14165071').then(
