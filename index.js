@@ -40,8 +40,8 @@ bot.on('message', message=>{
             .addField('Nickname', message.member.nickname)
             .addField('Join Date', message.member.joinedAt)
             .addField('Account Creation Date', message.author.createdAt)
-            .footer(message.author.id)
-            .setColor(0x00cae7)
+            .setFooter(message.author.id)
+            .setColor(0x00cae7) 
             .setThumbnail(message.author.displayAvatarURL())
             message.channel.send(embed);
             break;
