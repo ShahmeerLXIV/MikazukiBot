@@ -28,7 +28,7 @@ bot.on('message', message=>{
             if(!message.member.hasPermission("ADMINISTRATOR")) return message.channel.send('```You do not have permission to use this command.```')
             message.delete();
             message.channel.send('https://discordapp.com/channels/719498861026213959/719498861483261974/720976632000806932')
-            message.delete(10000);
+            message.delete();
             if(!args[1]) return message.channel.send('```Please specify a value.```')
             message.channel.bulkDelete(args[1]);   
             break;
