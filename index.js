@@ -25,9 +25,11 @@ bot.on('message', message=>{
             }
             break;
         case 'zahando':
-            if(!message.member.hasPermission("ADMINISTRATOR")) return message.channel.send('```You do not have permission to use this command.```')
+            if(!message.member.hasPermission("ADMINISTRATOR")) {
+                return message.channel.send('```You do not have permission to use this command.```')}
             message.delete();
-            if(!args[1]) return message.channel.send('```Please specify a value.```')
+            if(!args[1]) {
+                return message.channel.send('```Please specify a value.```')}
             message.channel.bulkDelete(args[1]);   
             break;
         case 'heavensdoor':
