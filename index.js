@@ -27,8 +27,8 @@ bot.on('message', message=>{
         case 'zahando':
             if(!message.member.hasPermission("ADMINISTRATOR")) return message.channel.send('```You do not have permission to use this command.```')
             message.delete();
-            message.channel.send('https://discordapp.com/channels/719498861026213959/719498861483261974/720976632000806932')
-            message.delete();
+            message.channel.send('https://tenor.com/view/scrape-okuyasu-nijimura-za-hando-the-hand-jojo-gif-14165071')
+            message.delete()
             if(!args[1]) return message.channel.send('```Please specify a value.```')
             message.channel.bulkDelete(args[1]);   
             break;
