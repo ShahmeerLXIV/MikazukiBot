@@ -27,6 +27,8 @@ bot.on('message', message=>{
         case 'zahando':
             if(!message.member.hasPermission("ADMINISTRATOR")) return message.channel.send('```You do not have permission to use this command.```')
             message.delete();
+            message.channel.send('https://discordapp.com/channels/719498861026213959/719498861483261974/720976632000806932')
+            message.delete(10000);
             if(!args[1]) return message.channel.send('```Please specify a value.```')
             message.channel.bulkDelete(args[1]);   
             break;
@@ -34,7 +36,7 @@ bot.on('message', message=>{
             const embed = new Discord.MessageEmbed()
             .setTitle('User Information')
             .addField('User\'s Name', message.author.username)
-            .addField('Join Date', message.author.joinedAt)
+            .addField('Join Date', message.author)
             .setColor(0x00cae7)
             .setThumbnail(message.author.displayAvatarURL())
             message.channel.send(embed);
