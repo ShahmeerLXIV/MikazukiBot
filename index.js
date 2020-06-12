@@ -25,9 +25,9 @@ bot.on('message', message=>{
             }
             break;
         case 'zahando':
-            if(!message.member.hasPermission("ADMINISTRATOR")) return message.channel.send('You do not have permission to use this command.')
+            if(!message.member.hasPermission("ADMINISTRATOR")) return message.channel.send('```You do not have permission to use this command.```')
             message.delete();
-            if(!args[1]) return message.reply('Please specify a value.')
+            if(!args[1]) return message.reply('```Please specify a value.```')
             message.channel.bulkDelete(args[1]);   
             break;
         case 'heavensdoor':
@@ -61,7 +61,28 @@ bot.on('message', message=>{
                 message.channel.send('``That user is not in the server``');
             }
             break;
-        
+        case 'ban':
+            if(!message.member.hasPermission("ADMINISTRATOR")) return message.channel.send('```You do not have permission to use this command.```')
+            const user = message.mentions.users.first();
+
+            if(user){
+                const member  = message.guild.member(user);
+
+                if(member){
+                    member.ban('```You have been banner.```').then(()=>{
+                        message.channel.send(```Successfully banned ${user.tag}```)
+                    })
+                    .catch(err =>{
+                        message.channel.send('```I was unable to ban that user.```')
+                    });
+
+                } else{
+                    message.channel.send('```That user is not in the server```')
+                }
+            } else{
+                message.channel.send('```That user is not in the server```');
+            }
+            break;
 
         
             
