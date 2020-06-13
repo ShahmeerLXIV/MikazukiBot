@@ -20,6 +20,8 @@ bot.on('message', message=>{
             message.channel.send("pong")
             break;
         case 'info':
+            if(!args[1]) return message.channel.send('```Please specify a user.```');
+            
             if(args[1] === 'Shahmeer'){
                 message.channel.send('```He is currently playing anime waifu game.```');
             }
