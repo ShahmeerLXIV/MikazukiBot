@@ -15,14 +15,13 @@ bot.on('message', message=>{
 
     if(message.author.bot || !message.content.startsWith(Prefix)) return;
     
-    switch(args[0]){
+    switch(args[0].toLowerCase()){
         case 'ping':
             message.channel.send("pong")
             break;
         case 'info':
             if(args[1] === 'Shahmeer'){
                 message.channel.send('```He is currently playing anime waifu game.```');
-        
             }
             if(args[1] === 'Gorodo'){
                 message.channel.send('```Horny.```');
@@ -35,6 +34,12 @@ bot.on('message', message=>{
             }
             if(args[1] === 'Yeetus'){
                 message.channel.send('```He is eating cheetos.```')
+            }
+            if(args[1] === 'H'){
+                message.channel.send('```It\'s a me Mario!```');
+            }
+            if(args[1] === 'Poke'){
+                message.channel.send('```Haha Poke, more like, idk :sunglasses:');
             }
             break;
         case 'zahando':
