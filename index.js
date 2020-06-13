@@ -79,7 +79,7 @@ bot.on('message', message=>{
             
                 if(member){
                     member.kick('```You have been kicked.```').then(()=>{
-                        message.channel.send(```Successfully kicked ${user.tag}```)
+                        message.reply(```Successfully kicked ${user.tag}```)
                     })
                     .catch(err =>{
                         message.channel.send('```I was unable to kick that user.```');
@@ -97,16 +97,17 @@ bot.on('message', message=>{
             if(!message.member.hasPermission("ADMINISTRATOR")) return message.channel.send('```You do not have permission to use this command.```')
             const user = message.mentions.users.first();
 
+            
             if(user){
                 const member  = message.guild.member(user);
 
                 if(member){
-                    member.ban('```You have been banner.```').then(()=>{
-                        message.channel.send(```Successfully banned ${user.tag}```)
-                    })
-                    .catch(err =>{
+                    member.ban('```You have been banned.```').then(()=>{
+                        message.reply(```Successfully banned ${user.tag}```)
+                    }) .catch(err =>{
                         message.channel.send('```I was unable to ban that user.```')
                     });
+                 
 
                 } else{
                     message.channel.send('```That user is not in the server```')
