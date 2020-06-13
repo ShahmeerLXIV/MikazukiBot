@@ -39,7 +39,7 @@ bot.on('message', message=>{
                 message.channel.send('```It\'s a me Mario!```');
             }
             if(args[1] === 'Poke'){
-                message.channel.send('```Haha Poke, more like, idk :sunglasses:');
+                message.channel.send('```Haha Poke, more like, idk :sunglasses:```');
             }
             break;
         case 'zahando':
