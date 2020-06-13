@@ -5,6 +5,9 @@ const token = (process.env.token);
 
 const Prefix = ('^');
 
+if(!message.content.startsWith('^'))
+return;
+
 bot.on('ready', () =>{
     Console.log('Bruh Momento');
 })
