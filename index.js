@@ -5,8 +5,9 @@ const token = (process.env.token);
 
 const Prefix = ('^');
 
-if(!message.content.startsWith('^'))
-return;
+if(message.author.bot || !message.content.startsWith(Prefix)) return;
+
+const args = message.content.slice(Prefix.length).split(/ +/g);
 
 bot.on('ready', () =>{
     Console.log('Bruh Momento');
@@ -15,7 +16,7 @@ bot.on('ready', () =>{
 bot.on('message', message=>{
     let args = message.content.substring(Prefix.length).split(" ");
     
-    switch(args[0]){
+    switch(args[0].toLowerCase()){
         case 'ping':
             message.channel.send("pong")
             break;
