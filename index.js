@@ -21,7 +21,7 @@ bot.on('message', message=>{
             break;
         case 'info':
             if(!args[1]) return message.channel.send('```Please specify a user.```');
-            
+
             if(args[1] === 'Shahmeer'){
                 message.channel.send('```He is currently playing anime waifu game.```');
             }
@@ -82,12 +82,7 @@ bot.on('message', message=>{
                 if(member){
                     member.kick('```You have been kicked.```').then(()=>{
                         message.reply(```Successfully kicked ${user.tag}```)
-                    })
-                    .catch(err =>{
-                        message.channel.send('```I was unable to kick that user.```');
-                        Console.log(err);
                     });
-                    
                 } else{
                     message.channel.send('``That user is not in the server.``')
                 }
@@ -106,11 +101,7 @@ bot.on('message', message=>{
                 if(member){
                     member.ban('```You have been banned.```').then(()=>{
                         message.reply(```Successfully banned ${user.tag}```)
-                    }) .catch(err =>{
-                        message.channel.send('```I was unable to ban that user.```')
                     });
-                 
-
                 } else{
                     message.channel.send('```That user is not in the server```')
                 }
