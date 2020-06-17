@@ -24,37 +24,37 @@ bot.on('message', message=>{
         case 'info':
             if(!args[1]) return message.channel.send('```Please specify a user.```');
 
-            if(args[1].toLowerCase === 'Shahmeer'){
+            if(args[1] === 'Shahmeer' || 'shahmeer' || 'shah'){
                 message.channel.send('```He is currently playing anime waifu game.```');
             }
-            if(args[1].toLowerCase === 'Gorodo'){
+            if(args[1] === 'Gorodo' || 'gorodo'){
                 message.channel.send('```Horny.```');
             }
-            if(args[1].toLowerCase === 'Kart'){
+            if(args[1] === 'Kart' || 'kart'){
                 message.channel.send('```He is playing Roblox.```');
             }
-            if(args[1].toLowerCase === 'Starry'){
+            if(args[1] === 'Starry' || 'starry'){
                 message.channel.send('```He is currently very tired.```');
             }
-            if(args[1].toLowerCase === 'Yeetus'){
+            if(args[1] === 'Yeetus' || 'yeetus'){
                 message.channel.send('```He is eating cheetos.```')
             }
-            if(args[1].toLowerCase === 'H'){
+            if(args[1] === 'H' || 'h'){
                 message.channel.send('```It\'s a me Super Paper Mario! WAHOOO!!```');
             }
-            if(args[1].toLowerCase === 'Poke'){
+            if(args[1] === 'Poke' || 'poke'){
                 message.channel.send('```He is currently sucking Hichem\'s dick.```');
             }
-            if(args[1].toLowerCase === 'Shuk'){
+            if(args[1] === 'Shuk' || 'shuk'){
                 message.channel.send('```He controls the future of the PPP server.```');
             }
-            if(args[1].toLowerCase === 'Echoes'){
+            if(args[1] === 'Echoes' || 'echoes'){
                 message.channel.send('```District 6 Female.```');
             }
-            if(args[1].toLowerCase === 'Wons'){
+            if(args[1] === 'Wons' || 'wons'){
                 message.channel.send('```Known child rapist, his most brutal case was raping a cosplayer dressed as a fictional character from the franchise JoJo\'s Bizarre Adventure , the said cosplayer dressed as a character of the fourth part, Shigekiyo "Shigechi" Yangu.```');
             }
-            if(args[1].toLowerCase === 'Hoodied'){
+            if(args[1] === 'Hoodied' || 'hoodied'){
                 message.channel.send('https://imgur.com/aHgzynv');
             }
             break;
