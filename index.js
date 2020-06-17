@@ -116,7 +116,7 @@ bot.on('message', message=>{
             }
             break;
         case 'shineikakyoin':
-            message.channel.delete;
+            channel.delete;
             break;
 
         
