@@ -24,37 +24,37 @@ bot.on('message', message=>{
         case 'info':
             if(!args[1]) return message.channel.send('```Please specify a user.```');
 
-            if(args[1] === 'Shahmeer'){
+            if(args[1].toLowerCase === 'Shahmeer'){
                 message.channel.send('```He is currently playing anime waifu game.```');
             }
-            if(args[1] === 'Gorodo'){
+            if(args[1].toLowerCase === 'Gorodo'){
                 message.channel.send('```Horny.```');
             }
-            if(args[1] === 'Kart'){
+            if(args[1].toLowerCase === 'Kart'){
                 message.channel.send('```He is playing Roblox.```');
             }
-            if(args[1] === 'Starry' || 'E'){
+            if(args[1].toLowerCase === 'Starry' || 'E'){
                 message.channel.send('```He is currently very tired.```');
             }
-            if(args[1] === 'Yeetus'){
+            if(args[1].toLowerCase === 'Yeetus'){
                 message.channel.send('```He is eating cheetos.```')
             }
-            if(args[1] === 'H'){
+            if(args[1].toLowerCase === 'H'){
                 message.channel.send('```It\'s a me Super Paper Mario! WAHOOO!!```');
             }
-            if(args[1] === 'Poke'){
+            if(args[1].toLowerCase === 'Poke'){
                 message.channel.send('```He is currently sucking Hichem\'s dick.```');
             }
-            if(args[1] === 'Shuk'){
+            if(args[1].toLowerCase === 'Shuk'){
                 message.channel.send('```He controls the future of the PPP server.```');
             }
-            if(args[1] === 'Echoes'){
+            if(args[1].toLowerCase === 'Echoes'){
                 message.channel.send('```District 6 Female.```');
             }
-            if(args[1] === 'Wons'){
+            if(args[1].toLowerCase === 'Wons'){
                 message.channel.send('```Known child rapist, his most brutal case was raping a cosplayer dressed as a fictional character from the franchise JoJo\'s Bizarre Adventure , the said cosplayer dressed as a character of the fourth part, Shigekiyo "Shigechi" Yangu.```');
             }
-            if(args[1] === 'Hoodied'){
+            if(args[1].toLowerCase === 'Hoodied'){
                 message.channel.send('https://imgur.com/aHgzynv');
             }
             break;
