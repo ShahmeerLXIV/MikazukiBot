@@ -11,6 +11,8 @@ bot.on('ready', () =>{
 })
 
 bot.on('message', message=>{
+
+
     let args = message.content.substring(Prefix.length).split(" ");
 
     if(message.author.bot || !message.content.startsWith(Prefix)) return;
@@ -31,7 +33,7 @@ bot.on('message', message=>{
             if(args[1] === 'Kart'){
                 message.channel.send('```He is playing Roblox.```');
             }
-            if(args[1] === 'Starry'){
+            if(args[1] === 'Starry' || 'E'){
                 message.channel.send('```He is currently very tired.```');
             }
             if(args[1] === 'Yeetus'){
@@ -121,7 +123,11 @@ bot.on('message', message=>{
         
     }
 
-            
+    if(message.content.toLowerCase() === 'Hello')(
+        message.channel.send('```Shut the fuck up bitch```')
+    );
+
+           
             
             
     }
