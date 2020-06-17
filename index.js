@@ -33,7 +33,7 @@ bot.on('message', message=>{
             if(args[1].toLowerCase === 'Kart'){
                 message.channel.send('```He is playing Roblox.```');
             }
-            if(args[1].toLowerCase === 'Starry' || 'E'){
+            if(args[1].toLowerCase === 'Starry'){
                 message.channel.send('```He is currently very tired.```');
             }
             if(args[1].toLowerCase === 'Yeetus'){
