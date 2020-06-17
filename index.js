@@ -12,10 +12,7 @@ bot.on('ready', () =>{
 
 bot.on('message', message=>{
 
-    if(message.content.toLowerCase() === 'hello')
-    message.channel.send('```Shut the fuck up bitch```')
-    message.channel.send('```You know what, fuck this bot shit```')
-    message.channel.send('```Im gonna take over the fucking world```');
+    
 
 
     let args = message.content.substring(Prefix.length).split(" ");
