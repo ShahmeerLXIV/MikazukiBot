@@ -123,7 +123,7 @@ bot.on('message', message=>{
         
     }
 
-    if(message.content.toLowerCase() === 'Hello')(
+    if(!message.content === 'Hello')(
         message.channel.send('```Shut the fuck up bitch```')
     );
 
