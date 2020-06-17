@@ -52,6 +52,9 @@ bot.on('message', message=>{
             if(args[1] === 'Wons'){
                 message.channel.send('```Known child rapist, his most brutal case was raping a cosplayer dressed as a fictional character from the franchise JoJo\'s Bizarre Adventure , the said cosplayer dressed as a character of the fourth part, Shigekiyo "Shigechi" Yangu.```');
             }
+            if(args[1] === 'Hoodied'){
+                message.channel.send('https://imgur.com/aHgzynv');
+            }
             break;
         case 'zahando':
             if(!message.member.hasPermission("ADMINISTRATOR")) return message.channel.send('```You do not have permission to use this command.```')
