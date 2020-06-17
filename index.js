@@ -115,9 +115,7 @@ bot.on('message', message=>{
                 message.channel.send('```That user is not in the server```');
             }
             break;
-        case 'shineikakyoin':
-            message.channel.delete();
-            break;
+        
 
         
             
