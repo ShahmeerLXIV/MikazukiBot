@@ -12,6 +12,9 @@ bot.on('ready', () =>{
 
 bot.on('message', message=>{
 
+    if(message.content.toLowerCase() === 'hello')
+    message.channel.send('```Shut the fuck up bitch```');
+
 
     let args = message.content.substring(Prefix.length).split(" ");
 
@@ -123,10 +126,7 @@ bot.on('message', message=>{
         
     }
 
-    if(!message.content === 'Hello')(
-        message.channel.send('```Shut the fuck up bitch```')
-    );
-
+   
            
             
             
